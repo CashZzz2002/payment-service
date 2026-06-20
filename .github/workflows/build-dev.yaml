@@ -49,9 +49,9 @@ steps:
     run: |
       docker build \
         -f deployment/Dockerfile.dev \
-        -t ghcr.io/cashzzz2002/payment-service:${{ steps.tag-version.outputs.version }} \
+        -t ghcr.io/CashZzz2002/payment-service:${{ steps.tag-version.outputs.version }} \
         .
 
   - name: Push Docker Image
     run: |
-      docker push ghcr.io/cashzzz2002/payment-service:${{ steps.tag-version.outputs.version }}
+      docker push ghcr.io/CashZzz2002/payment-service:${{ steps.tag-version.outputs.version }}
