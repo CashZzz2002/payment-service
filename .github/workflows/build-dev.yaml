@@ -56,4 +56,3 @@ steps:
   - name: Push Docker Image
     run: |
       docker push ghcr.io/cashzzz2002/payment-service:${{ steps.tag-version.outputs.version }}
-```
